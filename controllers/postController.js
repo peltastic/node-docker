@@ -65,7 +65,7 @@ exports.deletePost = async (req, res, next) => {
 };
 exports.createPost = async (req, res, next) => {
   try {
-    const post = await Post.creae(req.body);
+    const post = await Post.create(req.body);
     res.status(200).json({
       status: "success",
       data: {
